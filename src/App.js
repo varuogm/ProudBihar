@@ -72,7 +72,9 @@ export default function App() {
         🏳️‍🌈-har
         </motion.div>
       </motion.button>
-      <p>Use Bigger screen hovers</p>
+      <p style={{color: "#c3d7e8"}}>
+        Use pc for better 3d experience
+      </p>
     </MotionConfig>
   );
 }
