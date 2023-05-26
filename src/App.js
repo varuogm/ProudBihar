@@ -22,7 +22,7 @@ export default function App() {
       <motion.button
         ref={ref}
         initial={false}
-        animate={isHover ? "hover" : "rest"}
+        animate={ (isPress || isHover) ? "hover" : "rest"}
         whileTap="press"
         variants={{
           rest: { scale: 1 },
@@ -72,6 +72,7 @@ export default function App() {
         🏳️‍🌈-har
         </motion.div>
       </motion.button>
+      <p>Use Bigger screen hovers</p>
     </MotionConfig>
   );
 }
